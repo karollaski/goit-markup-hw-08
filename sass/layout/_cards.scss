@@ -1,0 +1,26 @@
+.cards__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.cards__heading {
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.cards__description {
+  color: var(--second-text-color);
+  line-height: 1.71em;
+}
+.cards__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-background-color);
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
+  fill: var(--main-text-color);
+}

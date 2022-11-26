@@ -1,0 +1,26 @@
+.customers__heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.customers__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customers__item {
+  fill: var(--light-grey-color);
+  border: solid 1px var(--light-grey-color);
+  transition-property: border, fill;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+  border-radius: var(--main-border-radius);
+
+  &:hover {
+    cursor: pointer;
+    fill: var(--brand-color);
+    border: solid 1px var(--brand-color);
+  }
+}

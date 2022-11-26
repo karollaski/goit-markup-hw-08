@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.social__team {
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social__icon_dark-color {
+  fill: var(--light-grey-color);
+}
+.social__icon_light-color {
+  fill: var(--contrast-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.social__icon_transition {
+  transition-property: background-color, fill;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+    fill: var(--contrast-color);
+  }
+}
+.social-foot__description {
+  color: var(--contrast-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}

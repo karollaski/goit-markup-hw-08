@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  color: var(--contrast-color);
+  background-color: var(--brand-color);
+  font-weight: 700;
+  font-size: var(--second-font-size);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 0;
+  border: none;
+  box-shadow: var(--main-box-shadow);
+  border-radius: var(--main-border-radius);
+  width: 200px;
+  height: 50px;
+}
+.button_newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  fill: currentColor;
+}

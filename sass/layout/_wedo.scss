@@ -1,0 +1,32 @@
+.wedo {
+  padding-bottom: 94px;
+}
+.wedo__heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.wedo__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wedo__item {
+  position: relative;
+}
+.wedo__description {
+  color: var(--contrast-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

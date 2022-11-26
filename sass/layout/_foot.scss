@@ -1,0 +1,10 @@
+.foot {
+  background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.foot__wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}

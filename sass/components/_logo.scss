@@ -1,0 +1,22 @@
+.logo {
+  font-family: var(--second-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo__accent-text {
+  color: var(--brand-color);
+}
+/* margin right do loga w header */
+.logo_mrg-right {
+  margin-right: 93px;
+}
+/* modyfikatory loga header*/
+.logo_dark-text {
+  color: var(--dark-color);
+}
+/* modyfikatory loga footer*/
+.logo_light-text {
+  color: var(--contrast-color);
+}

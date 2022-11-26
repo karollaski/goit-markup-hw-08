@@ -1,0 +1,29 @@
+.button-filtr {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  font-size: var(--second-font-size);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 0;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+  border-radius: var(--main-border-radius);
+
+  &:hover,
+  &:focus {
+    color: var(--contrast-color);
+    background-color: var(--brand-color);
+    box-shadow: var(--main-box-shadow);
+  }
+}
+.button-filtr__description {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-inline: 22px;
+}
