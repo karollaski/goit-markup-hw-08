@@ -6,7 +6,7 @@
 .social__team {
   justify-content: center;
   padding-top: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 .social__icon {
   display: flex;
@@ -33,6 +33,11 @@
     background-color: var(--brand-color);
     fill: var(--contrast-color);
   }
+}
+.social-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .social-foot__description {
   color: var(--contrast-color);

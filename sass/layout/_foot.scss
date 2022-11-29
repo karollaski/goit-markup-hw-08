@@ -5,6 +5,28 @@
 }
 .foot__wrapper {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  // align-items: center;
+  gap: 60px;
+}
+// TABLET
+@media screen and (min-width: 768px) {
+  .foot__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  // .foot {
+  //   background-color: var(--dark-background-color);
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
+  .foot__wrapper {
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }

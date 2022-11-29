@@ -1,3 +1,14 @@
 .navigation {
-  margin-right: auto;
+  display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    margin-right: auto;
+  }
+}
+// desktop
+// .navigation {
+//   margin-right: auto;
+// }

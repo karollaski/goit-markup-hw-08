@@ -1,31 +1,73 @@
 .contact {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
 }
-.contact__items {
-  list-style-type: none;
-  &:hover .contact__icons,
-  &:focus .contact__icons {
-    color: var(--brand-color);
+@media screen and (min-width: 768px) {
+  .contact {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 10px;
+  }
+
+  .contact__items {
+    list-style-type: none;
+    &:hover .contact__icons,
+    &:focus .contact__icons {
+      color: var(--brand-color);
+    }
+  }
+  .contact__link {
+    display: flex;
+    align-items: center;
+    color: var(--second-text-color);
+    transition-property: color;
+    transition-duration: var(--main-transition-duration);
+    transition-timing-function: var(--main-transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+    }
+  }
+  .contact__icons {
+    fill: currentColor;
+    margin-right: 8px;
   }
 }
-.contact__link {
-  display: flex;
-  align-items: center;
-  color: var(--second-text-color);
-  transition-property: color;
-  transition-duration: var(--main-transition-duration);
-  transition-timing-function: var(--main-transition-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--brand-color);
+// desktop
+@media screen and (min-width: 1200px) {
+  .contact {
+    // font-weight: 500;
+    // letter-spacing: 0.02em;
+    line-height: 1.14;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
   }
-}
-.contact__icons {
-  fill: currentColor;
-  margin-right: 10px;
+  // .contact__items {
+  //   list-style-type: none;
+  //   &:hover .contact__icons,
+  //   &:focus .contact__icons {
+  //     color: var(--brand-color);
+  //   }
+  // }
+  // .contact__link {
+  //   display: flex;
+  //   align-items: center;
+  //   color: var(--second-text-color);
+  //   transition-property: color;
+  //   transition-duration: var(--main-transition-duration);
+  //   transition-timing-function: var(--main-transition-timing-function);
+  //   &:hover,
+  //   &:focus {
+  //     color: var(--brand-color);
+  //   }
+  // }
+  .contact__icons {
+    // fill: currentColor;
+    margin-right: 10px;
+  }
 }

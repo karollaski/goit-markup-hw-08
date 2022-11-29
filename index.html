@@ -26,6 +26,74 @@
           rel="noreferrer noopener"
           ><span class="logo__accent-text">Web</span>Studio</a
         >
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu d-none">
+          <div class="mobile-menu__wrapper">
+            <button class="toggle-menu" type="button">
+              <svg class="mobile-menu__icons" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-mob-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                  <a class="menu-mobile__link current-page" href="#">Agencja</a>
+                </li>
+                <li class="menu-mobile__item">
+                  <a
+                    class="menu-mobile__link"
+                    href="./portfolio.html"
+                    target="_self"
+                    rel="noreferrer noopener"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="menu-mobile__item">
+                  <a class="menu-mobile__link" href="#">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="menu-mob-contact">
+              <li class="menu-mob-contact__items">
+                <a class="menu-mob-contact__tel" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+              <li class="menu-mob-contact__items">
+                <a
+                  class="menu-mob-contact__email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-mob-social">
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Instagram</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Twitter</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Facebook</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- END MOBILE MENU -->
+        <!-- BTN OPEN MOBILE MENU -->
+        <button class="menu-open" type="button">
+          <svg class="mobile-menu__icons" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <!-- BTN OPEN MOBILE MENU ENDS -->
         <nav class="navigation">
           <ul class="menu">
             <li class="menu__item">
@@ -64,7 +132,8 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
+      <!-- section-heading -->
       <section class="heading">
         <div class="container">
           <h1 class="heading-title">
@@ -147,7 +216,7 @@
           </div>
         </div>
       </section>
-
+      <!-- section-cards-->
       <section class="cards section">
         <div class="container">
           <ul class="cards__list">
@@ -202,51 +271,98 @@
           </ul>
         </div>
       </section>
-
+      <!-- section-wedo -->
       <section class="wedo">
         <div class="container">
           <h2 class="wedo__heading">Czym się zajmujemy</h2>
           <ul class="wedo__list">
             <li class="wedo__item">
-              <img
-                src="./images/writting.jpg"
-                alt="Osoba pisząca kod na białej klawiaturze"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/writting.jpg 1x, ./images/writting@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/writting.jpg"
+                  alt="Osoba pisząca kod na białej klawiaturze"
+                  height="294"
+                />
+              </picture>
               <p class="wedo__description">Aplikacje komputerowe</p>
             </li>
             <li class="wedo__item">
-              <img
-                src="./images/phone.jpg"
-                alt="Osoba trzymająca telefon podczas pracy na laptopie"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/phone.jpg"
+                  alt="Osoba trzymająca telefon podczas pracy na laptopie"
+                  height="294"
+                />
+              </picture>
               <p class="wedo__description">Aplikacje mobilne</p>
             </li>
             <li class="wedo__item">
-              <img
-                src="./images/color.jpg"
-                alt="Osoba pracująca na tablecie z paletą kolorów"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/color.jpg 1x, ./images/color@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/color.jpg"
+                  alt="Osoba pracująca na tablecie z paletą kolorów"
+                  height="294"
+                />
+              </picture>
               <p class="wedo__description">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
       </section>
-
+      <!-- section-team -->
       <section class="team">
         <div class="team__wrapper container">
           <div class="section">
             <h2 class="team__heading">Nasz zespół</h2>
             <ul class="team__list">
               <li class="team__items">
-                <img
-                  class="team__img"
-                  src="./images/productdesigner.jpg"
-                  alt="team photo 1"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/productdesigner.jpg    1x,
+                      ./images/productdesigner@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/productdesigner-tablet.jpg    1x,
+                      ./images/productdesigner-tablet@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/productdesigner-mobile.jpg    1x,
+                      ./images/productdesigner-mobile@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/productdesigner.jpg"
+                    alt="team photo 1"
+                    height="260"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__department">Product Designer</p>
                 <ul class="social social__team">
@@ -293,12 +409,38 @@
                 </ul>
               </li>
               <li class="team__items">
-                <img
-                  class="team__img"
-                  src="./images/frentenddeveloper.jpg"
-                  alt="team photo 2"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/frotenddeveloper.jpg    1x,
+                      ./images/frotenddeveloper@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/frotenddeveloper-tablet.jpg    1x,
+                      ./images/frotenddeveloper-tablet@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/frotenddeveloper-mobile.jpg    1x,
+                      ./images/frotenddeveloper-mobile@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/frotenddeveloper.jpg"
+                    alt="team photo 2"
+                    height="260"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__department">Frontend Developer</p>
                 <ul class="social social__team">
@@ -345,12 +487,38 @@
                 </ul>
               </li>
               <li class="team__items">
-                <img
-                  class="team__img"
-                  src="./images/marketing.jpg"
-                  alt="team photo 3"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/marketing.jpg    1x,
+                      ./images/marketing@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/marketing-tablet.jpg    1x,
+                      ./images/marketing-tablet@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/marketing-mobile.jpg    1x,
+                      ./images/marketing-mobile@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/marketing.jpg"
+                    alt="team photo 3"
+                    height="260"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__department">Marketing</p>
                 <ul class="social social__team">
@@ -397,12 +565,38 @@
                 </ul>
               </li>
               <li class="team__items">
-                <img
-                  class="team__img"
-                  src="./images/uidesigner.jpg"
-                  alt="team photo 4"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/uidesigner.jpg    1x,
+                      ./images/uidesigner@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/uidesigner-tablet.jpg    1x,
+                      ./images/uidesigner-tablet@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/uidesigner-mobile.jpg    1x,
+                      ./images/uidesigner-mobile@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/uidesigner.jpg"
+                    alt="team photo 4"
+                    height="260"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__department">UI Designer</p>
                 <ul class="social social__team">
@@ -452,38 +646,38 @@
           </div>
         </div>
       </section>
-
+      <!-- section-customers -->
       <section class="section customers">
         <div class="container">
           <h2 class="customers__heading">Nasi klienci</h2>
           <ul class="customers__list">
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-1"></use>
               </svg>
             </li>
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-2"></use>
               </svg>
             </li>
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-3"></use>
               </svg>
             </li>
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-4"></use>
               </svg>
             </li>
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-5"></use>
               </svg>
             </li>
             <li class="customers__item">
-              <svg width="170px" height="92px">
+              <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-Client-6"></use>
               </svg>
             </li>
@@ -491,7 +685,7 @@
         </div>
       </section>
     </main>
-
+    <!-- section-foot -->
     <footer class="foot">
       <div class="container foot__wrapper">
         <div class="foot__stack">
@@ -585,5 +779,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
