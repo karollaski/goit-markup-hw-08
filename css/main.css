@@ -232,7 +232,18 @@ figure {
 .menu-mob-social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  row-gap: 10px;
+}
+
+.menu-mob-social__items {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-mob-social__items:last-of-type {
+  border-right: none;
 }
 
 .menu-mob-social__link {
@@ -343,6 +354,7 @@ figure {
 }
 @media screen and (min-width: 1200px) {
   .contact {
+    font-size: var(--main-font-size);
     line-height: 1.14;
     flex-direction: row;
     align-items: center;
@@ -357,6 +369,7 @@ figure {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 1600px;
+  height: 400px;
   margin: 0 auto;
   background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heading-bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -391,6 +404,7 @@ figure {
 @media screen and (min-width: 1200px) {
   .heading {
     max-width: 1600px;
+    height: 600px;
     margin: 0 auto;
     padding: 200px 0;
     background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heading-bg-desktop.jpg);
@@ -421,7 +435,7 @@ figure {
   .heading-title {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .button {
@@ -466,8 +480,11 @@ figure {
   position: relative;
   display: flex;
   align-items: center;
-  width: 450px;
-  height: 609px;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 630px;
+  overflow: scroll;
   background-color: var(--contrast-color);
   margin: auto;
   display: flex;
@@ -579,7 +596,7 @@ figure {
 .rules {
   margin-top: 20px;
   margin-bottom: 30px;
-  width: 420px;
+  max-width: 420px;
 }
 
 .rules__label {
@@ -661,11 +678,17 @@ figure {
 }
 
 @media screen and (min-width: 768px) {
+  .cards__heading {
+    text-align: left;
+  }
   .cards__items {
     flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
+  .cards__heading {
+    text-align: left;
+  }
   .cards__list {
     justify-content: space-between;
     align-items: center;
@@ -684,7 +707,7 @@ figure {
 @media screen and (min-width: 1200px) {
   .wedo {
     padding-bottom: 94px;
-    display: contents;
+    display: block;
   }
   .wedo__heading {
     margin-bottom: 50px;
@@ -837,6 +860,11 @@ figure {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-foot {
+    align-items: flex-start;
+  }
+}
 .customers__heading {
   margin-bottom: 30px;
   font-size: 28px;

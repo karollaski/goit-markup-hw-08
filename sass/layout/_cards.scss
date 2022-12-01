@@ -30,12 +30,18 @@
 
 // TABLET
 @media screen and (min-width: 768px) {
+  .cards__heading {
+    text-align: left;
+  }
   .cards__items {
     flex-basis: calc((100% - 60px) / 2);
   }
 }
 // DESKTOP
 @media screen and (min-width: 1200px) {
+  .cards__heading {
+    text-align: left;
+  }
   .cards__list {
     justify-content: space-between;
     align-items: center;

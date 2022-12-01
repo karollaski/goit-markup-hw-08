@@ -3,8 +3,11 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 450px;
-  height: 609px;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 630px;
+  overflow: scroll;
   background-color: var(--contrast-color);
   margin: auto;
   display: flex;
