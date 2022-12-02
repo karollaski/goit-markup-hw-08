@@ -74,13 +74,11 @@ figure {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0 15px;
   }
 }
 .section {
@@ -683,7 +681,7 @@ figure {
     text-align: left;
   }
   .cards__items {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -792,7 +790,7 @@ figure {
     flex-wrap: wrap;
   }
   .team__items {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1059,6 +1057,7 @@ figure {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 8px;
 }
 
 .button-filtr {

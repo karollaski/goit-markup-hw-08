@@ -26,6 +26,74 @@
           rel="noreferrer noopener"
           ><span class="logo__accent-text">Web</span>Studio</a
         >
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu d-none">
+          <div class="mobile-menu__wrapper">
+            <button class="toggle-menu" type="button">
+              <svg class="mobile-menu__icons" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-mob-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                  <a class="menu-mobile__link current-page" href="#">Agencja</a>
+                </li>
+                <li class="menu-mobile__item">
+                  <a
+                    class="menu-mobile__link"
+                    href="./portfolio.html"
+                    target="_self"
+                    rel="noreferrer noopener"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="menu-mobile__item">
+                  <a class="menu-mobile__link" href="#">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="menu-mob-contact">
+              <li class="menu-mob-contact__items">
+                <a class="menu-mob-contact__tel" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+              <li class="menu-mob-contact__items">
+                <a
+                  class="menu-mob-contact__email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-mob-social">
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Instagram</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Twitter</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Facebook</a>
+              </li>
+              <li class="menu-mob-social__items">
+                <a class="menu-mob-social__link" href="#">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- END MOBILE MENU -->
+        <!-- BTN OPEN MOBILE MENU -->
+        <button class="menu-open" type="button">
+          <svg class="mobile-menu__icons" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <!-- BTN OPEN MOBILE MENU ENDS -->
         <nav class="navigation">
           <ul class="menu">
             <li class="menu__item">
@@ -375,5 +443,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
