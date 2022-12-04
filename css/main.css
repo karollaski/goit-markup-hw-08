@@ -1037,29 +1037,61 @@ figure {
     margin-bottom: 0px;
   }
 }
-.subpages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .filtr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filtr__list {
   list-style-type: none;
-  width: 47.7%;
-  padding-bottom: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
+.filtr__item:nth-of-type(1) .button-filtr {
+  width: 103px;
+}
+.filtr__item:nth-of-type(2) .button-filtr {
+  width: 128px;
+}
+.filtr__item:nth-of-type(3) .button-filtr {
+  width: 145px;
+}
+.filtr__item:nth-of-type(4) .button-filtr {
+  width: 103px;
+}
+.filtr__item:nth-of-type(5) .button-filtr {
+  width: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtr__item:nth-of-type(1) .button-filtr {
+    width: 109px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filtr__list {
+    padding-bottom: 16px;
+  }
+  .filtr__item:nth-of-type(1) .button-filtr {
+    width: 121px;
+  }
+  .filtr__item:nth-of-type(2) .button-filtr {
+    width: 93px;
+  }
+  .filtr__item:nth-of-type(3) .button-filtr {
+    width: 114px;
+  }
+  .filtr__item:nth-of-type(4) .button-filtr {
+    width: 91px;
+  }
+  .filtr__item:nth-of-type(5) .button-filtr {
+    width: 121px;
+  }
+}
 .button-filtr {
   cursor: pointer;
   font-family: inherit;
@@ -1086,7 +1118,6 @@ figure {
   display: block;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-inline: 22px;
 }
 
 .projects__list {
@@ -1111,6 +1142,12 @@ figure {
   transform: translateY(0);
 }
 
+.projects__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .projects__link {
   display: block;
   transition-property: box-shadow;
@@ -1122,7 +1159,9 @@ figure {
 }
 
 .project__description {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .project__name {
@@ -1154,10 +1193,16 @@ figure {
   line-height: 1.55;
   color: var(--contrast-color);
   background-color: rgba(33, 150, 243, 0.9);
-  padding-block: 49px;
-  padding-left: 24px;
+  padding-block: 77px;
+  padding-inline: 24px;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .overlay__card {
+    padding-block: 49px;
+  }
 }/*# sourceMappingURL=main.css.map */

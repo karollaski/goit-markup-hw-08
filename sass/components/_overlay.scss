@@ -11,10 +11,46 @@
   line-height: 1.55;
   color: var(--contrast-color);
   background-color: rgba(33, 150, 243, 0.9);
-  padding-block: 49px;
-  padding-left: 24px;
+  padding-block: 77px;
+  padding-inline: 24px;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
 }
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .overlay__card {
+    padding-block: 49px;
+  }
+}
+// DESKTOP
+// @media screen and (min-width: 1200px) {
+//   .overlay__card {
+//     padding-block: 49px;
+//     padding-inline: 24px;
+//   }
+// }
+
+//  MOBILE
+// .overlay {
+//   position: relative;
+//   overflow: hidden;
+// }
+// .overlay__card {
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   font-size: 18px;
+//   line-height: 1.55;
+//   color: var(--contrast-color);
+//   background-color: rgba(33, 150, 243, 0.9);
+//   padding-block: 49px;
+//   padding-left: 24px;
+//   transform: translateY(100%);
+//   transition-property: transform;
+//   transition-duration: var(--main-transition-duration);
+//   transition-timing-function: var(--main-transition-timing-function);
+// }

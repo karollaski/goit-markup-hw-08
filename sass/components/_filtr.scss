@@ -1,16 +1,63 @@
+// MOBILE
 .filtr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filtr__list {
   list-style-type: none;
-  width: 47.7%;
-  padding-bottom: 16px;
+  // padding-bottom: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 8px;
+}
+.filtr__item {
+  &:nth-of-type(1) .button-filtr {
+    width: 103px;
+  }
+  &:nth-of-type(2) .button-filtr {
+    width: 128px;
+  }
+  &:nth-of-type(3) .button-filtr {
+    width: 145px;
+  }
+  &:nth-of-type(4) .button-filtr {
+    width: 103px;
+  }
+  &:nth-of-type(5) .button-filtr {
+    width: 130px;
+  }
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .filtr__item {
+    &:nth-of-type(1) .button-filtr {
+      width: 109px;
+    }
+  }
+}
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .filtr__list {
+    padding-bottom: 16px;
+  }
+  .filtr__item {
+    &:nth-of-type(1) .button-filtr {
+      width: 121px;
+    }
+    &:nth-of-type(2) .button-filtr {
+      width: 93px;
+    }
+    &:nth-of-type(3) .button-filtr {
+      width: 114px;
+    }
+    &:nth-of-type(4) .button-filtr {
+      width: 91px;
+    }
+    &:nth-of-type(5) .button-filtr {
+      width: 121px;
+    }
+  }
 }

@@ -11,6 +11,7 @@
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
   border: 1px solid #ececec;
+  // max-width: 450px;
   &:hover,
   &:focus {
     box-shadow: var(--main-box-shadow);
@@ -18,6 +19,11 @@
   &:hover .overlay__card {
     transform: translateY(0);
   }
+}
+.projects__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .projects__link {
   display: block;
@@ -31,7 +37,10 @@
   }
 }
 .project__description {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  // padding: 20px 24px;
 }
 .project__name {
   font-weight: 700;
@@ -46,3 +55,16 @@
   font-size: var(--second-font-size);
   line-height: 1.87;
 }
+
+// // TABLET
+// @media screen and (min-width: 768px) {
+//   .projects__items {
+//     max-width: 354px;
+//   }
+// }
+// // DESKTOP
+// @media screen and (min-width: 1200px) {
+//   .projects__items {
+//     max-width: 370px;
+//   }
+// }
